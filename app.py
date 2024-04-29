@@ -21,7 +21,7 @@ st.write(data.describe())
 
 #Visualizations
 
-st.suheader('Closing Price vs Time Chart')
+st.subheader('Closing Price vs Time Chart')
 fig = plt.figure(figsize = (12,6))
 plt.plot(data.Close)
 st.pyplot(fig)
