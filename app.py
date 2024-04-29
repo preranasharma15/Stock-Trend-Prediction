@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import pandas_datareader as data
-from keras.models import load_model
+import tensorflow as tf
 import streamlit as st
 import yfinance as yf
 
@@ -57,7 +57,7 @@ data_training_array = scaler.fit_transform(data_training)
 
 #Load my model
 
-model = load_model('my_model.keras')
+model = tf.keras.models.load_model('keras_model.h5')
 
 #Testing part
 
