@@ -33,7 +33,7 @@ plt.plot(ma100)
 plt.plot(data.Close)
 st.pyplot(fig)
 
-st.suheader('Closing Price vs Time Chart')
+st.subheader('Closing Price vs Time Chart')
 ma100 = data.Close.rolling(100).mean()
 ma200 = data.Close.rolling(200).mean()
 fig = plt.figure(figsize = (12,6))
